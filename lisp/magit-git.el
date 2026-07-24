@@ -346,7 +346,16 @@ See info node `(magit)Debugging Tools' for more information."
   (message "Additional reporting of Git errors %s"
            (if magit-git-debug "enabled" "disabled")))
 
-(defvar magit--refresh-cache nil)
+(defvar magit--refresh-cache nil
+  "Cache used during refreshes and other expensive operations.
+
+If non-nil, this has the form ((HITS . COUNT) . ENTRIES).  HITS is how
+many times any of the cached ENTRIES were accessed.  COUNT is the number
+of ENTRIES.  Each entry has the form (KEY . VALUE).  KEY can have one
+of two forms (TOPDIR . ARGUMENTS) or (TOPDIR . ACTION).  TOPDIR is the
+top-level directory of a repository.  ARGUMENTS are arguments to git.
+ACTION is a symbol identifying an action other than calling git.  VALUE
+is the cached value.")
 
 (defmacro magit--with-refresh-cache (key &rest body)
   (declare (indent 1) (debug (form body)))
