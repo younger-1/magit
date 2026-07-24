@@ -745,7 +745,7 @@ executable."
 Raise an error if Git cannot be found, if it exits with a
 non-zero status, or the output does not have the expected
 format."
-  (magit--with-refresh-cache default-directory
+  (magit--with-refresh-cache (list default-directory)
     (let ((host (file-remote-p default-directory)))
       (or (cdr (assoc host magit--host-git-version-cache))
           (magit--with-temp-process-buffer
