@@ -39,7 +39,7 @@
    ("-F" "Force"            ("-f" "--force"))
    ("-h" "Disable hooks"    "--no-verify")
    ("-n" "Dry run"          ("-n" "--dry-run"))
-   ("-u" "Set upstream"   "--set-upstream" :level 5)
+   ("-u" "Set upstream"     "--set-upstream" :level 5)
    ("-T" "Include all tags" "--tags")
    ("-t" "Include related annotated tags" "--follow-tags")]
   [:if magit-get-current-branch
