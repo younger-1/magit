@@ -8769,7 +8769,7 @@ what this command will do.  For example:
 
 @lisp
 (transient-insert-suffix 'magit-push \"p\"
-  '(\"i\" magit-push-implicitly))"
+  '(\"i\" magit-push-implicitly))
 @end lisp
 @end deffn
 

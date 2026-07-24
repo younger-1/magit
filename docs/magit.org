@@ -7361,7 +7361,7 @@ add them to the transient.
 
   #+BEGIN_SRC emacs-lisp
     (transient-insert-suffix 'magit-push \"p\"
-      '(\"i\" magit-push-implicitly))"
+      '(\"i\" magit-push-implicitly))
   #+END_SRC
 
 - Command: magit-push-to-remote remote args ::
