@@ -8785,6 +8785,26 @@ behavior depends on at least these Git variables: @code{push.default},
 @code{remote.<remote>.push}.
 @end deffn
 
+@defopt magit-push-options
+This option lists completion choices that are offered when setting
+@code{--push-option} in the @code{magit-push} menu.
+
+Note that @code{--push-option} is disabled by default. See
+@ref{Enabling and Disabling Suffixes,,,transient,} for how to enable it.
+
+Different forges support different push options.  Links to upstream
+documentation:
+
+@itemize
+@item
+@uref{https://docs.gitlab.com/topics/git/commit/#push-options}
+@end itemize
+
+There should be similar documentation for other forges, but I could
+not find the respective summary pages.  If you find them, please let
+me know.
+@end defopt
+
 @node Plain Patches
 @section Plain Patches
 

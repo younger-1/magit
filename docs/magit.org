@@ -7376,6 +7376,23 @@ add them to the transient.
   ~branch.<branch>.remote~, ~branch.<branch>.merge~, and
   ~remote.<remote>.push~.
 
+- User Option: magit-push-options ::
+
+  This option lists completion choices that are offered when setting
+  ~--push-option~ in the ~magit-push~ menu.
+
+  Note that ~--push-option~ is disabled by default. See
+  [[info:transient#Enabling and Disabling Suffixes]] for how to enable it.
+
+  Different forges support different push options.  Links to upstream
+  documentation:
+
+  - https://docs.gitlab.com/topics/git/commit/#push-options
+
+  There should be similar documentation for other forges, but I could
+  not find the respective summary pages.  If you find them, please let
+  me know.
+
 ** Plain Patches
 
 - Key: W (magit-patch) ::
